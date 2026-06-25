@@ -1,0 +1,144 @@
+/* EmployeeLogin.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow:hidden;
+}
+
+/* Animated Background */
+
+.employee-container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#0f4c81,#1565c0,#2196f3,#42a5f5);
+    background-size:400% 400%;
+    animation:gradientBG 12s ease infinite;
+}
+
+/* Login Box */
+
+.employee-box{
+    width:420px;
+    padding:40px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+    animation:floatBox 1s ease;
+}
+
+/* Heading */
+
+.employee-box h2{
+    text-align:center;
+    color:#fff;
+    font-size:32px;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+
+/* Labels */
+
+.employee-box label{
+    display:block;
+    margin-bottom:8px;
+    margin-top:18px;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+}
+
+/* Input */
+
+.employee-box input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:rgba(255,255,255,.18);
+    color:#fff;
+    font-size:15px;
+    transition:.3s;
+}
+
+/* Placeholder */
+
+.employee-box input::placeholder{
+    color:#0c1321;
+}
+
+
+.employee-box input:focus{
+    outline:none;
+    background:rgba(255,255,255,.28);
+    box-shadow:0 0 15px rgba(255,255,255,.5);
+}
+
+
+
+.forgot{
+    margin-top:15px;
+    text-align:right;
+}
+
+.forgot a{
+    text-decoration:none;
+    color:#110e0e;
+    font-size:14px;
+    transition:.3s;
+}
+
+.forgot a:hover{
+    color:#1b1a19;
+}
+
+
+.employee-box button{
+    width:100%;
+    padding:14px;
+    margin-top:30px;
+    border:none;
+    border-radius:10px;
+    background:#ffffff;
+    color:#161b21;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.employee-box button:hover{
+    background:#202225;
+    color:#fff;
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+    .employee-box{
+        width:90%;
+        padding:30px;
+    }
+
+    .employee-box h2{
+        font-size:26px;
+    }
+
+}
